@@ -1,0 +1,38 @@
+package Array_List;
+
+
+import java.util.ArrayList;
+
+public class iterateTheList {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>();
+        //Add Operation O(1)
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+        System.out.println(list);
+
+        //size() simillary like array.length
+        System.out.println("The size of Array list is "+list.size());
+
+//        for(int i=0;i<list.size();i++){
+//            System.out.print(list.get(i)+" ");
+//        }
+//        System.out.println();
+
+
+        //Reverse the Array
+        for( int i=list.size()-1;i>=0;i--){
+            System.out.print(list.get(i)+" ");
+        }
+        System.out.println();
+
+
+    }
+
+}
+
